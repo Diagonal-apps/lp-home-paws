@@ -81,7 +81,20 @@ a {
   margin-bottom: 64px;
 }
 
-.servicos{
+#cards{
+  margin: 64px 00px;
+  text-align:center;
 display: grid;
 grid-template-columns: 1fr 1fr;
+}
+
+.servicos{
+  margin:16px;
+  border-radius: 16px;
+  padding:32px;
+  border:2px solid #ff7d99
+}
+
+.servicos h3{
+  color:#ff7d99;
 }
