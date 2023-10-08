@@ -27,7 +27,7 @@ h2 {
   font-size: 32px;
   line-height: 32px; /* 100% */
   letter-spacing: -0.45px;
-}
+}'
 
 h3 {
   font-family: "Nunito", sans-serif;
@@ -43,6 +43,7 @@ p {
   font-size: 12px;
   line-height: 16px; /* 133.333% */
   letter-spacing: -0.45px;
+  color:#939393;
 }
 
 li {
@@ -92,9 +93,56 @@ grid-template-columns: 1fr 1fr;
   margin:16px;
   border-radius: 16px;
   padding:32px;
-  border:2px solid #ff7d99
+  border:2px solid #77D5D0;
 }
 
 .servicos h3{
-  color:#ff7d99;
+  color:#77D5D0;
+}
+
+.carr{
+   margin:16px;
+  border-radius: 16px;
+  padding:32px;
+background: #77D5D0;
+}
+
+.carr h2{
+    color: #fff;
+margin-bottom:16px;
+}
+
+.carr p{
+    color: #36605e;
+}
+.carr li{
+    color: #36605e;
+}
+
+.retangulo{
+    width: 96px;
+height: 6px;
+border-radius: 18px;
+background: #FF7D99;
+margin-bottom:16px;
+}
+.quem{
+    text-align: center;
+    padding: 32px;
+}
+
+.quem h2{
+    margin-bottom:16px;
+    color:#77D5D0;
+}
+
+.conheca{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 32px;
+}
+
+.conheca h2{
+     margin-bottom:16px;
+    color:#77D5D0;
 }
