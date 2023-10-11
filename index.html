@@ -13,6 +13,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -80,6 +87,7 @@
 
   <!-- carrosel -->
   <section id="carrosel">
+    <div class="slider">
     <div class="carr">
       <h2>Missão</h2>
       <div class="retangulo"></div>
@@ -104,11 +112,23 @@
         <li>Integridade e respeito.</li>
       </ul>
     </div>
+  </div>
   </section>
 
   <footer>
     <img src="#" alt="logo">
   </footer>
+
+  <script>
+$(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 8000, // Muda a cada 8 segundos
+    infinite: true,
+	dots: true,
+  });
+});
+  </script>
 
 </body>
 

@@ -27,7 +27,7 @@ h2 {
   font-size: 32px;
   line-height: 32px; /* 100% */
   letter-spacing: -0.45px;
-}'
+}
 
 h3 {
   font-family: "Nunito", sans-serif;
@@ -105,6 +105,8 @@ grid-template-columns: 1fr 1fr;
   border-radius: 16px;
   padding:32px;
 background: #77D5D0;
+flex: 0 0 100%;
+max-width: 100%;
 }
 
 .carr h2{
@@ -145,4 +147,26 @@ padding: 32px;
 .conheca h2{
      margin-bottom:16px;
     color:#77D5D0;
+}
+
+#carrosel {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li.slick-active button:before {
+  color:rgba(255, 125, 153, 1) !important;
+  font-size: 16px !important;
+}
+
+/* Estilo para os dots inativos (cor sólida) */
+.slick-dots li button:before {
+  color: rgba(255, 125, 153, 0.3) !important; /* Cor para o dot inativo */
+  font-size: 16px !important;
 }
