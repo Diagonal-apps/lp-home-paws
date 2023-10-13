@@ -7,31 +7,37 @@
   <title>Home Paws</title>
 
   <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
   <link rel="stylesheet" href="style/style.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 </head>
 
 <body>
 
   <!-- fixed btn -->
-  <a href="#"><i class='fa fa-whatsapp' style='font-size:24px'></i>Agende um atendimento</a>
+  <div class="button-container">
+  <a href="#" class="pulsating-button" id="meuBotao"><i class='fa fa-whatsapp' style='font-size:24px'></i>Agende um atendimento</a>
+</div>
+<audio id="meuAudio" src="img/miau.mp3"></audio>
 
   <!-- hero -->
   <section id="banner">
-    <img src="#" alt="logo">
-    <img src="#" alt="Atendimento veterinário no conforto da sua casa">
+    <img src="img/Logo.svg" alt="logo">
     <h1>Atendimento veterinário no <span id="destaque">conforto da sua casa</span></h1>
+    <img src="#" alt="Atendimento veterinário no conforto da sua casa">
   </section>
 
   <!-- sobre -->
@@ -46,8 +52,8 @@
       <h2>Conheça nossos serviços</h2>
       <p>O atendimento a domicílio oferece uma série de serviços que podem ser realizados no conforto do seu lar, e também em clínicas parceiras da nossa confiança.</p>
       </div>
-      <div>
-      <img src="#" alt="Conheça nossos serviços">
+      <div class="conhecaimg-container">
+      <img src="img/servicos.png" class="conhecaimg" alt="Conheça nossos serviços">
       </div>
     </div> 
   </section>
@@ -88,21 +94,39 @@
   <!-- carrosel -->
   <section id="carrosel">
     <div class="slider">
+      
     <div class="carr">
+      <div class="carrgrid">
+      <div>
       <h2>Missão</h2>
       <div class="retangulo"></div>
       <p>Somos apaixonados por animais e acreditamos que o atendimento personalizado no conforto do lar é essencial para promover a saúde e o bem-estar dos nossos pacientes de quatro patas.<br>
         Com nossos serviços domiciliares conseguimos atender às necessidades específicas dos animais e de seus responsáveis, trazendo uma série de benefícios significativos.</p>
+      </div>
+      <div class="conhecaimg-container">
+        <img src="img/missao.png" alt="missão">
+      </div>
+      </div>
     </div>
+    
 
     <div class="carr">
+      <div class="carrgrid">
+        <div>
       <h2>Visão</h2>
       <div class="retangulo"></div>
       <p>Ser reconhecida pela excelência em serviços veterinários em domicílio, oferecendo uma experiência excepcional de atendimento, a fim de proporcionar uma vida saudável e plena para nossos pacientes.
       </p>
     </div>
+    <div class="conhecaimg-container">
+      <img src="img/visao.png" alt="visão">
+    </div>
+    </div>
+    </div>
 
     <div class="carr">
+      <div class="carrgrid">
+        <div>
       <h2>Valores</h2>
       <div class="retangulo"></div>
       <ul>
@@ -112,11 +136,17 @@
         <li>Integridade e respeito.</li>
       </ul>
     </div>
+    <div class="conhecaimg-container">
+      <img src="img/valores.png" alt="valores">
+    </div>
+    </div>
+    </div>
   </div>
+</div>
   </section>
 
-  <footer>
-    <img src="#" alt="logo">
+  <footer id="footer">
+    <img src="img/Logo.svg" alt="logo">
   </footer>
 
   <script>
@@ -129,6 +159,16 @@ $(document).ready(function(){
   });
 });
   </script>
+
+<script>
+  const botao = document.getElementById('meuBotao');
+  const audio = new Audio('img/miau.mp3'); // Crie um novo objeto de áudio
+
+  botao.addEventListener('click', () => {
+    audio.play(); // Inicie a reprodução do áudio
+    botao.disabled = true; // Desabilite o botão para impedir cliques repetidos
+  });
+</script>
 
 </body>
 

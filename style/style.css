@@ -5,7 +5,6 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  margin: 64px 32px;
 }
 
 h1 {
@@ -55,7 +54,16 @@ li {
 }
 
 /* botao */
-a {
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 998;
+}
+
+.pulsating-button {
+  animation: pulse 8s infinite;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   text-decoration: none;
@@ -72,15 +80,29 @@ a {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
   white-space: nowrap; /* Impede que o texto quebre em várias linhas */
   min-width: 128px;
   margin-bottom: 64px;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#banner{
+  background: #6BC0BB;
+  border-radius: 0px 0px 300px 500px;
+  padding: 64px 128px 256px 128px;
+}
+
 
 #cards{
   margin: 64px 00px;
@@ -107,6 +129,11 @@ grid-template-columns: 1fr 1fr;
 background: #77D5D0;
 flex: 0 0 100%;
 max-width: 100%;
+}
+
+.carrgrid{
+  display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 .carr h2{
@@ -142,15 +169,27 @@ margin-bottom:16px;
     display: grid;
 grid-template-columns: 1fr 1fr;
 padding: 32px;
+gap: 32px;
 }
 
 .conheca h2{
      margin-bottom:16px;
-    color:#77D5D0;
+    color:#6BC0BB;
+}
+
+.conhecaimg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conhecaimg{
+  max-width: 200px;
 }
 
 #carrosel {
   overflow: hidden;
+  margin-bottom: 64px;
 }
 
 .slider {
@@ -167,6 +206,12 @@ padding: 32px;
 
 /* Estilo para os dots inativos (cor sólida) */
 .slick-dots li button:before {
-  color: rgba(255, 125, 153, 0.3) !important; /* Cor para o dot inativo */
+  color: rgba(255, 125, 153, 0.5) !important; /* Cor para o dot inativo */
   font-size: 16px !important;
+}
+
+#footer{
+  background: #FF7D99;
+  margin: 0px;
+  padding: 64px;
 }
