@@ -396,7 +396,7 @@ li {
     display: none;
   }
   #cards {
-    padding: 0px 64px;
+    padding: 0px 0px;
     margin: 0px 0px 128px 0px;
     text-align: center;
     display: grid;
@@ -412,5 +412,10 @@ li {
   .quem {
     text-align: center;
     padding: 32px;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
   }
 }
