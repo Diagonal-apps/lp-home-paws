@@ -1,4 +1,4 @@
-/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 * {
   margin: 0;
@@ -14,8 +14,9 @@ h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 48px; /* 100% */
-  letter-spacing: -0.45px;
+  line-height: 48px;
+  /* 100% */
+  letter-spacing: -1.8px;
 }
 
 #destaque {
@@ -27,7 +28,8 @@ h2 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 32px;
-  line-height: 32px; /* 100% */
+  line-height: 32px;
+  /* 100% */
   letter-spacing: -0.45px;
 }
 
@@ -35,7 +37,8 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 20px;
-  line-height: 21px; /* 105% */
+  line-height: 21px;
+  /* 105% */
   letter-spacing: -0.45px;
 }
 
@@ -52,7 +55,8 @@ li {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   letter-spacing: -0.45px;
 }
 
@@ -76,6 +80,7 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #ffa2b6;
 }
+
 /* fim geral */
 
 /* botao */
@@ -101,12 +106,14 @@ li {
   color: #fff;
   box-shadow: 0px 0px 8px 0px rgba(255, 125, 153, 0.5);
   border-radius: 64px;
-  padding: 0px 32px; /* Reduzi a largura do padding para dar espaço extra */
+  padding: 0px 32px;
+  /* Reduzi a largura do padding para dar espaço extra */
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  white-space: nowrap;
+  /* Impede que o texto quebre em várias linhas */
   min-width: 128px;
   margin-bottom: 64px;
 }
@@ -115,13 +122,16 @@ li {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 /* fim botao */
 
 /* botao dsk*/
@@ -167,12 +177,14 @@ li {
   background-color: #ff7d99;
   color: #fff;
   border-radius: 64px;
-  padding: 0px 32px; /* Reduzi a largura do padding para dar espaço extra */
+  padding: 0px 32px;
+  /* Reduzi a largura do padding para dar espaço extra */
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  white-space: nowrap;
+  /* Impede que o texto quebre em várias linhas */
   min-width: 128px;
   max-width: fit-content;
   margin: 0px 0px 128px 128px;
@@ -195,12 +207,14 @@ li {
   background-color: #ff7d99;
   color: #fff;
   border-radius: 64px;
-  padding: 0px 32px; /* Reduzi a largura do padding para dar espaço extra */
+  padding: 0px 32px;
+  /* Reduzi a largura do padding para dar espaço extra */
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  white-space: nowrap;
+  /* Impede que o texto quebre em várias linhas */
   min-width: 128px;
   max-width: fit-content;
   margin: 64px 0px 128px 0px;
@@ -223,12 +237,14 @@ li {
   background-color: #ff7d99;
   color: #fff;
   border-radius: 64px;
-  padding: 0px 32px; /* Reduzi a largura do padding para dar espaço extra */
+  padding: 0px 32px;
+  /* Reduzi a largura do padding para dar espaço extra */
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  white-space: nowrap;
+  /* Impede que o texto quebre em várias linhas */
   min-width: 128px;
   max-width: fit-content;
   transition: transform 0.2s;
@@ -241,21 +257,23 @@ li {
   transform: scale(1.05);
   background-color: #ffa2b6;
 }
+
 /* fim botao dsk */
 
 /* header */
 #banner {
   display: none;
 }
+
 .banner-mobile {
   width: 100%;
   overflow: hidden;
 }
 
-.banner-mobile img {
-  width: 100%; /* A imagem ocupará 100% da largura do container */
-  height: auto; /* A altura será ajustada automaticamente para manter a proporção original da imagem */
-  display: block; /* Remove espaço extra que pode ser causado por imagens inline */
+.banner-mobile-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .banner-elements {
@@ -280,6 +298,7 @@ li {
   margin-bottom: 80px;
   text-align: center;
 }
+
 /* fim header */
 
 /* header dsk */
@@ -287,13 +306,16 @@ li {
   background-color: #77d5d0;
   max-height: 100vh;
 }
+
 #banner-dsk svg {
   display: block;
 }
+
 .banner-dsk {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .banner-dsk h1 {
   margin: 128px 0px 64px 128px;
   color: #fff;
@@ -306,16 +328,20 @@ li {
   font-weight: 800;
   color: #ff7d99;
 }
+
 .banner-logo-dsk {
   margin: 80px 0px 64px 128px;
 }
+
 .img-banner-dsk {
+  height: auto;
   max-width: 90%;
   margin-top: 64px;
   position: relative;
   top: 0px;
   z-index: 900;
 }
+
 /* fim header dsk */
 
 /* sobre */
@@ -324,6 +350,7 @@ li {
   padding: 0px 256px 0px 256px;
   background-color: #fff;
   margin-bottom: 128px;
+  margin-top: 128px;
 }
 
 .quem h2 {
@@ -379,6 +406,7 @@ li {
 .conhecaimg {
   max-width: 200px;
 }
+
 .conhecaimg-container-dsk {
   display: flex;
   justify-content: center;
@@ -386,6 +414,7 @@ li {
   height: auto;
   width: 80%;
 }
+
 /* fim sobre */
 
 /* cards */
@@ -427,16 +456,21 @@ li {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 48px; /* Posicione o círculo acima do título ajustando o valor conforme necessário */
-  left: 50%; /* Centralize horizontalmente */
-  transform: translateX(-50%); /* Centralize horizontalmente */
+  top: 48px;
+  /* Posicione o círculo acima do título ajustando o valor conforme necessário */
+  left: 50%;
+  /* Centralize horizontalmente */
+  transform: translateX(-50%);
+  /* Centralize horizontalmente */
 }
+
 /* fim cards */
 
 /* carrossel */
 #carrossel {
   display: none;
 }
+
 .carr {
   margin: 16px;
   border-radius: 16px;
@@ -507,7 +541,8 @@ li {
 }
 
 .slick-dots li button:before {
-  color: rgba(255, 125, 153, 0.5) !important; /* Cor para o dot inativo */
+  color: rgba(255, 125, 153, 0.5) !important;
+  /* Cor para o dot inativo */
   font-size: 16px !important;
 }
 
@@ -518,12 +553,14 @@ li {
   padding: 64px 0px;
   margin: 0px 128px;
 }
+
 .carr-dsk {
   margin: 16px;
   border-radius: 16px;
   padding: 32px;
   background: #77d5d0;
 }
+
 .carr-dsk h2 {
   color: #fff;
   margin-bottom: 16px;
@@ -554,33 +591,46 @@ li {
   line-height: 1.6;
 }
 
+.conhecaimg-dsk {
+  width: auto;
+  height: 400px;
+}
+
 .conhecaimg-container-dsk {
   position: relative;
 }
 
-.conhecaimg-container-dsk img {
+.conhecaimg-container-dsk-img {
   width: 60%;
   position: absolute;
   top: 0;
   right: 0;
 }
+
 /* fim carrossel */
 
 /* footer */
 #footer {
-  position: relative; /* Define a posição como fixa */
-  bottom: 0; /* Fixa o rodapé na parte inferior da janela */
-  width: 100%; /* Faz o rodapé ocupar toda a largura da janela */
-  z-index: 9999; /* Define um valor alto para o z-index */
+  position: relative;
+  /* Define a posição como fixa */
+  bottom: 0;
+  /* Fixa o rodapé na parte inferior da janela */
+  width: 100%;
+  /* Faz o rodapé ocupar toda a largura da janela */
+  z-index: 9999;
+  /* Define um valor alto para o z-index */
 }
+
 .curved-upper {
   background-color: #fff;
   display: block;
 }
+
 .curved-upper svg {
   background-color: #fff;
   display: block;
 }
+
 .footer {
   background: #ff7d99;
   margin: 0px;
@@ -588,13 +638,15 @@ li {
   padding: 64px;
 }
 
-.social img {
+.social-img {
   padding: 16px;
   margin-top: 32px;
   transition: transform 0.2s;
 }
-.social img:hover {
+
+.social-img {
   transform: scale(1.05);
+
 }
 
 .direitos {
@@ -613,6 +665,7 @@ li {
   text-decoration: none;
   color: #ff7d99;
 }
+
 /* fim footer */
 
 /* media queries */
@@ -620,15 +673,18 @@ li {
   #carrossel {
     display: block;
   }
+
   #carrossel-dsk {
     display: none;
   }
+
   #cards {
     padding: 0px 0px;
     margin: 0px 0px 128px 0px;
     text-align: center;
     display: block;
   }
+
   .conheca {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -636,42 +692,55 @@ li {
     gap: 32px;
     margin-top: 64px;
   }
+
   .quem {
     text-align: center;
     padding: 32px;
+    margin-top: 0px;
   }
+
   .container {
     position: relative;
     text-align: center;
     margin-top: 0px;
   }
+
   #banner {
     display: block;
   }
+
   #banner-dsk {
     display: none;
   }
+
   .button-container {
     display: block;
   }
+
   .button-container-dsk {
     display: none;
   }
+
   .conheca-button-container-dsk {
     display: none;
   }
+
   .conheca-text {
     margin-left: 0px;
   }
+
   .chamada-desk {
     display: none;
   }
+
   .conhecaimg-container {
     display: block;
   }
+
   .conhecaimg-container-dsk {
     display: none;
   }
+
   .button-whats {
     display: none;
   }
