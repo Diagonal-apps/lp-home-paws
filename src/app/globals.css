@@ -469,20 +469,24 @@ li {
 /* carrossel */
 #carrossel {
   display: none;
+  margin-bottom: 100px;
+}
+
+.carr-space {
+  padding: 0 20px;
 }
 
 .carr {
-  margin: 16px;
+  width: 100%;
+  min-height: 440px;
   border-radius: 16px;
-  padding: 32px;
+  padding: 25px;
   background: #77d5d0;
-  flex: 0 0 100%;
-  max-width: 100%;
 }
 
 .carrgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carr h2 {
@@ -496,25 +500,6 @@ li {
   line-height: 1.2;
 }
 
-.carr ul {
-  list-style: none;
-}
-
-.carr ul li::before {
-  content: "\2022";
-  color: #ff7d99;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.carr li {
-  color: #36605e;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 .retangulo {
   width: 96px;
   height: 6px;
@@ -523,16 +508,10 @@ li {
   margin-bottom: 16px;
 }
 
-#carrossel {
-  overflow: hidden;
-  margin-bottom: 64px;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-  align-items: center;
-  justify-content: center;
+.carr li {
+  color: #36605e;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .slick-dots li.slick-active button:before {
@@ -638,15 +617,19 @@ li {
   padding: 64px;
 }
 
-.social-img {
-  padding: 16px;
+.social {
   margin-top: 32px;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
   transition: transform 0.2s;
 }
 
 .social-img {
   transform: scale(1.05);
-
 }
 
 .direitos {
