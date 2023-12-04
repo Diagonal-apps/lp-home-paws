@@ -1,5 +1,9 @@
-import Image from 'next/image'
+'use client'
+
+// Importação de Bibliotecas Externas e conteúdos
+import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import Image from 'next/image'
 import Logo from '@/assets/Logo.svg'
 import BannerMobile from '@/assets/banner-mobile.png'
 import BannerDSK from '@/assets/img-dsk.png'
@@ -17,18 +21,19 @@ import Values from '@/assets/valores.png'
 import Instagram from '@/assets/insta.svg'
 import Facebook from '@/assets/face.svg'
 import Whatsapp from '@/assets/whatsapp.svg'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
+// Exportação da página em forma de função JavaScript
 export default function Home() {
+  const settings = {
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-  const handleContact = async () => {
-    var wpp = '5511996297906';
-    wpp = wpp.replace(/\D/g, '');
-
-    var urlWhatsApp = 'https://api.whatsapp.com/send?phone=' + wpp;
-
-    window.location.href = urlWhatsApp;
-  }
-
+  // Retorno da função em formato HTML
   return (
     <main className="container-test">
       {/* <!-- botao --> */}
@@ -179,55 +184,60 @@ export default function Home() {
 
       {/* <!-- carrosel --> */}
       <section id="carrossel">
-        <div className="slider">
+        <Slider {...settings}>
 
-          <div className="carr">
-            <div className="carrgrid">
-              <div>
-                <h2>Missão</h2>
-                <div className="retangulo"></div>
-                <p>Somos apaixonados por animais e acreditamos que o atendimento personalizado no conforto do lar é essencial para promover a saúde e o bem-estar dos nossos pacientes de quatro patas.<br /><br />
-                  Com nossos serviços domiciliares conseguimos atender às necessidades específicas dos animais e de seus responsáveis, trazendo uma série de benefícios significativos.</p>
-              </div>
-              <div className="conhecaimg-container">
-                <Image src={Mission} alt="missão" />
+          <div className="carr-space">
+            <div className="carr">
+              <div className="carrgrid">
+                <div>
+                  <h2>Missão</h2>
+                  <div className="retangulo"></div>
+                  <p>Somos apaixonados por animais e acreditamos que o atendimento personalizado no conforto do lar é essencial para promover a saúde e o bem-estar dos nossos pacientes de quatro patas.</p>
+                  <p>Com nossos serviços domiciliares conseguimos atender às necessidades específicas dos animais e de seus responsáveis, trazendo uma série de benefícios significativos.</p>
+                </div>
+                <div className="conhecaimg-container">
+                  <Image src={Mission} alt="missão" />
+                </div>
               </div>
             </div>
           </div>
 
-
-          <div className="carr">
-            <div className="carrgrid">
-              <div>
-                <h2>Visão</h2>
-                <div className="retangulo"></div>
-                <p>Ser reconhecida pela excelência em serviços veterinários em domicílio, oferecendo uma experiência excepcional de atendimento, a fim de proporcionar uma vida saudável e plena para nossos pacientes.
-                </p>
-              </div>
-              <div className="conhecaimg-container">
-                <Image src={Vision} alt="visão" />
-              </div>
-            </div>
-          </div>
-
-          <div className="carr">
-            <div className="carrgrid">
-              <div>
-                <h2>Valores</h2>
-                <div className="retangulo"></div>
-                <ul>
-                  <li>Paixão pelos animais;</li>
-                  <li>Ética, empatia e honestidade;</li>
-                  <li>Qualificação constante;</li>
-                  <li>Integridade e respeito.</li>
-                </ul>
-              </div>
-              <div className="conhecaimg-container">
-                <Image src={Values} alt="valores" />
+          <div className="carr-space">
+            <div className="carr">
+              <div className="carrgrid">
+                <div>
+                  <h2>Visão</h2>
+                  <div className="retangulo"></div>
+                  <p>Ser reconhecida pela excelência em serviços veterinários em domicílio, oferecendo uma experiência excepcional de atendimento, a fim de proporcionar uma vida saudável e plena para nossos pacientes.
+                  </p>
+                </div>
+                <div className="conhecaimg-container">
+                  <Image src={Vision} alt="visão" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div className="carr-space">
+            <div className="carr">
+              <div className="carrgrid">
+                <div>
+                  <h2>Valores</h2>
+                  <div className="retangulo"></div>
+                  <ul>
+                    <li>Paixão pelos animais;</li>
+                    <li>Ética, empatia e honestidade;</li>
+                    <li>Qualificação constante;</li>
+                    <li>Integridade e respeito.</li>
+                  </ul>
+                </div>
+                <div className="conhecaimg-container">
+                  <Image src={Values} alt="valores" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
       </section>
       {/* <!-- fim carrosel --> */}
 
@@ -243,7 +253,7 @@ export default function Home() {
                 Com nossos serviços domiciliares conseguimos atender às necessidades específicas dos animais e de seus responsáveis, trazendo uma série de benefícios significativos.</p>
             </div>
             <div className="conhecaimg-container-dsk">
-              <Image src={Vision} alt="missão" />
+              <Image src={Mission} alt="missão" />
             </div>
           </div>
         </div>
@@ -293,9 +303,9 @@ export default function Home() {
         <div className="footer">
           <Image src={Logo} alt="logo" />
           <div className="social">
-            <a href="1"><Image src={Instagram} className='social-img' alt="Instagram" /></a>
+            <a href="https://www.instagram.com/cuidadoveterinarionolar/?igshid=MzMyNGUyNmU2YQ%3D%3D"><Image src={Instagram} className='social-img' alt="Instagram" /></a>
             <a href="2"><Image src={Facebook} className='social-img' alt="Facebook" /></a>
-            <a href="3"><Image src={Whatsapp} className='social-img' alt="WhatsApp" /></a>
+            <a href="https://api.whatsapp.com/send?phone=5511996297906"><Image src={Whatsapp} className='social-img' alt="WhatsApp" /></a>
           </div>
         </div>
         <div className="direitos">
