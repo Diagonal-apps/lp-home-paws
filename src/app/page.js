@@ -88,7 +88,11 @@ export default function Home() {
       <section id="sobre">
         <div className="quem">
           <h2>Quem somos</h2>
-          <p>Olá, amantes de pets! Somos a Home Paws, uma equipe de profissionais apaixonados por cuidar da saúde e bem-estar dos seus peludos no conforto do lar. Buscamos criar uma experiência positiva e menos estressante, promovendo saúde segurança e conforto para o seu melhor amigo! Deixe a saúde do seu pet em boas mãos. Entre em contato com a gente!</p>
+          <p>Olá amantes de pets!!
+            Somos a Home Paws, uma equipe de profissionais apaixonados por cuidar da saúde e bem estar dos seus peludos no conforto do lar.
+            Buscamos criar uma experiência positiva e menos estressante, promovendo saúde segurança e conforto para o seu melhor amigo!
+            Deixe a saude do seu pet em boas mãos.
+            Entre em contato com a gente!</p>
           <div className="quem-retangulo"></div>
         </div>
 
@@ -119,7 +123,7 @@ export default function Home() {
           </div>
           <div className="servicos">
             <h3>Consultas</h3><br />
-            <p>Avaliação e acompanhamento do seu pet, aplicação de medicações, orientação e bem-estar animal</p>
+            <p>Avaliação e acompanhamento do seu pet, aplicação de medicações, orientação e bem estar animal</p>
           </div>
         </div>
 
