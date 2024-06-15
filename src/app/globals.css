@@ -299,9 +299,14 @@ li {
   margin-bottom: 80px;
   text-align: center;
 }
+.logo{
+  max-width:512px;
+  width:80%;
+}
 @media(max-width:768px){
   .logo {
     width:100%;
+    max-width:512px;
     height:fit-content;
   }
 }
