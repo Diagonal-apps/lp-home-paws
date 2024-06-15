@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="banner-elements">
           <div className="banner-logo">
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo" className='logo' />
           </div>
           <h1>Atendimento veterinário no <span className="destaque">conforto da sua casa</span></h1>
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="banner-dsk">
           <div className="">
             <div className="banner-logo-dsk">
-              <Image src={Logo} alt="logo" />
+              <Image src={Logo} alt="logo" className='logo'/>
             </div>
             <h1>Atendimento veterinário no <span className="destaque-dsk">conforto da sua casa</span></h1>
             <div className="button-container-dsk">
@@ -305,7 +305,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="footer">
-          <Image src={Logo} alt="logo" />
+          <Image src={Logo} alt="logo" className='logo'/>
           <div className="social">
             <a href="https://www.instagram.com/cuidadoveterinarionolar/?igshid=MzMyNGUyNmU2YQ%3D%3D"><Image src={Instagram} className='social-img' alt="Instagram" /></a>
             <a href="2"><Image src={Facebook} className='social-img' alt="Facebook" /></a>
