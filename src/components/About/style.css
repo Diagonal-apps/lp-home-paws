@@ -1,0 +1,72 @@
+/* sobre */
+.quem {
+  text-align: center;
+  padding: 0px 256px 0px 256px;
+  background-color: #fff;
+  margin-bottom: 128px;
+  margin-top: 128px;
+}
+
+.quem h2 {
+  margin-bottom: 16px;
+  color: #77d5d0;
+}
+
+.quem-retangulo {
+  width: 128px;
+  height: 6px;
+  border-radius: 18px;
+  background: #ff7d99;
+  margin-top: 64px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.conheca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 128px;
+  gap: 32px;
+  margin-top: 256px;
+}
+
+.conheca-text {
+  margin-left: 128px;
+}
+
+.conheca h2 {
+  margin-bottom: 16px;
+  color: #77d5d0;
+}
+
+.chamada-desk {
+  display: block;
+  text-align: center;
+  padding: 0px 256px 0px 256px;
+  background-color: #fff;
+  margin: 256px 0px 128px 0px;
+  color: #77d5d0;
+  font-size: 64px;
+}
+
+.conhecaimg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.conhecaimg {
+  max-width: 200px;
+}
+
+.conhecaimg-container-dsk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 80%;
+}
+
+/* fim sobre */

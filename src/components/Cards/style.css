@@ -1,0 +1,49 @@
+
+/* cards */
+#cards {
+  padding: 0px 128px;
+  margin: 0px 0px 128px 0px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.servicos {
+  margin: 16px;
+  border-radius: 16px;
+  padding: 32px;
+  border: 2px solid #77d5d0;
+  height: 60%;
+  background: #f8f8f8;
+}
+
+.servicos h3 {
+  color: #77d5d0;
+  margin-top: 16px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 2px solid #77d5d0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 48px;
+  /* Posicione o círculo acima do título ajustando o valor conforme necessário */
+  left: 50%;
+  /* Centralize horizontalmente */
+  transform: translateX(-50%);
+  /* Centralize horizontalmente */
+}
+
+/* fim cards */

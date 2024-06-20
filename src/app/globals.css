@@ -8,6 +8,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  overflow-x:hidden;
 }
 
 h1 {
@@ -410,11 +411,15 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  width:50%;
 }
-
 .conhecaimg {
   max-width: 200px;
+}
+.conhecaimg-container img{
+  width:100%;
+  object-fit: cover;
+  border-radius:30%;
 }
 
 .conhecaimg-container-dsk {
@@ -492,11 +497,15 @@ li {
   border-radius: 16px;
   padding: 25px;
   background: #77d5d0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
 }
 
 .carrgrid {
   display: flex;
   justify-content: space-between;
+  max-width:800px;
 }
 
 .carr h2 {
@@ -536,11 +545,10 @@ li {
 }
 
 #carrossel-dsk {
-  display: block;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 64px 0px;
-  margin: 0px 128px;
+  display: flex;
+  gap:1em;
+  padding: 64px 120px;
+  margin: 0px ;
 }
 
 .carr-dsk {
@@ -661,6 +669,24 @@ li {
 
 /* fim footer */
 
+
+@media (max-width: 1413px){
+  #carrossel {
+    display: block;
+  }
+  
+  #carrossel-dsk {
+    display: none;
+  }
+  .conhecaimg-container {
+    display: block;
+  }
+
+  .conhecaimg-container-dsk {
+    display: none;
+  }
+
+}
 /* media queries */
 @media screen and (max-width: 768px) {
   #carrossel {
